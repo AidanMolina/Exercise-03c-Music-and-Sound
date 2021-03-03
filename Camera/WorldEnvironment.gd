@@ -6,11 +6,11 @@ func _ready():
 	show()
 
 func show():
-	if HUD.effects_blur:
-		pass
-	else:
-		pass
+	if HUD.effects_blur: 
+		environment.background_mode = Environment.BG_CANVAS 
+	else: 
+		environment.background_mode = Environment.BG_CLEAR_COLOR
 
 func hide():
-	pass
+	environment.background_mode = Environment.BG_CLEAR_COLOR
 
